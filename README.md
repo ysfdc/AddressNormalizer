@@ -1,17 +1,17 @@
-Overview and Business Case: 
+# Overview and Business Case: 
 
-#AccountTriggerEmpty.Trigger
+## AccountTriggerEmpty.Trigger
 
 A logicless trigger for Account designed to call the Account Handler Class
 Only runs on After Insert and After Update
 
-#AcctTriggerHandler.cls
+## AcctTriggerHandler.cls
 
 A class called by the Trigger that captures the old and new values of the Accounts that were part of the Trigger
 The values are checked to ensure that they are not blank and that the old and new values are different.
 The Accounts that meet the criteria are then passed to the GoogleMapsCallout class.
 
-#GoogleMapsCallout.cls
+## GoogleMapsCallout.cls
 
 This class contains a method that calls out to the Google Maps API passing the Account Address.
 It then receives the results and parses the results to get the specific address field components.
@@ -26,12 +26,12 @@ this may produce less accurate responses as this includes RANGE_INTERPOLATED and
 
 https://developers.google.com/maps/documentation/geocoding/intro#Results
 
-##Usage and Pre-reqs
+### Usage and Pre-reqs
 * In order for this class to run, you will need to get an API Key from Google
 	* https://developers.google.com/maps/documentation/geocoding/get-api-key
 	* Update APIkey to your Google Maps API Key 
 
-#Tests
+## Tests
 
 Somewhere (street) GB (country)
 unknown (street) Perth (city) WA (state) AU (country)
