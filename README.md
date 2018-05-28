@@ -1,4 +1,9 @@
-# Overview and Business Case: 
+## Overview and Business Case: 
+
+## Usage and Pre-reqs
+* In order for this class to run, you will need to get an API Key from Google
+	* https://developers.google.com/maps/documentation/geocoding/get-api-key
+	* Update APIkey to your Google Maps API Key 
 
 ## AccountTriggerEmpty.Trigger
 
@@ -21,17 +26,10 @@ Once the components have been retrieved, either all or some of the address field
 	* will set all address fields to new values (overwrites all data) if result is ROOFTOP or APPROXIMATE
 
 * isStrictMode = False
-	*	updates only the values that Google Maps returns 
-		this may produce less accurate responses as this includes RANGE_INTERPOLATED and GEOMETRIC_CENTER
+	* updates only the values that Google Maps returns this may produce less accurate responses as this includes RANGE_INTERPOLATED and GEOMETRIC_CENTER 
+	* See https://developers.google.com/maps/documentation/geocoding/intro#Results for detailed explanation
 
-https://developers.google.com/maps/documentation/geocoding/intro#Results
-
-### Usage and Pre-reqs
-* In order for this class to run, you will need to get an API Key from Google
-	* https://developers.google.com/maps/documentation/geocoding/get-api-key
-	* Update APIkey to your Google Maps API Key 
-
-## Tests
+## Test Cases
 
 * Somewhere (street) GB (country)
 * unknown (street) Perth (city) WA (state) AU (country)
