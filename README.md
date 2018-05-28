@@ -18,11 +18,11 @@ It then receives the results and parses the results to get the specific address 
 Once the components have been retrieved, either all or some of the address fields will be updated dependinig isStrictMode.
 
 * isStrictMode = True
-** will set all address fields to new values (overwrites all data) if result is ROOFTOP or APPROXIMATE
+	* will set all address fields to new values (overwrites all data) if result is ROOFTOP or APPROXIMATE
 
 * isStrictMode = False
-updates only the values that Google Maps returns 
-this may produce less accurate responses as this includes RANGE_INTERPOLATED and GEOMETRIC_CENTER
+	*	updates only the values that Google Maps returns 
+		this may produce less accurate responses as this includes RANGE_INTERPOLATED and GEOMETRIC_CENTER
 
 https://developers.google.com/maps/documentation/geocoding/intro#Results
 
@@ -33,13 +33,13 @@ https://developers.google.com/maps/documentation/geocoding/intro#Results
 
 ## Tests
 
-Somewhere (street) GB (country)
-unknown (street) Perth (city) WA (state) AU (country)
-Perth (state) AUS (country)
-A full local address in NY (all fields filled out but with abbreviations)
-Just the state - NY
-Just the country - US
-Just the zip code 14534
-The entire address written in the street field
-Just a street name, once with a number and once with no number
-Batch update
+* Somewhere (street) GB (country)
+* unknown (street) Perth (city) WA (state) AU (country)
+* Perth (state) AUS (country)
+* A full local address in NY (all fields filled out but with abbreviations)
+* Just the state - NY
+* Just the country - US
+* Just the zip code 14534
+* The entire address written in the street field
+* Just a street name, once with a number and once with no number
+* Batch update
