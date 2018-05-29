@@ -1,4 +1,5 @@
-## Overview and Business Case: https://sf9to5.com/2018/05/28/normalize-account-billing-address/
+## Overview and Business Case: 
+https://sf9to5.com/2018/05/28/normalize-account-billing-address/
 
 ## Usage and Pre-reqs
 * In order for this class to run, you will need to get an API Key from Google
